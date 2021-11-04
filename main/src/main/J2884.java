@@ -14,22 +14,38 @@ public class J2884 {
 		int Hn ;
 		int Mn = 45-M;
 				
-		0시 30분 -> 23시 45분
+
 		
-		if(H == 0 && H < 0 ) {
-			--
+		if(H == 0 ) {
+			Hn = 23;
+			if(M > 45) {
+				System.out.println(Hn+" "+(M-45));
+			
+			}else if(M < 45) {
+				System.out.println(Hn+" "+ (Ml-Mn)); 
+			}
 		}
 		else if(H < 0) {
 			Hn = (Hl-H);
-		}
 			
-		else {	
 			if(M > 45) {
-				System.out.println(H+" "+(M-45));
+				System.out.println(Hn+" "+(M-45));
 			
 			}else if(M < 45) {
-				System.out.println((H-1)+" "+ (Ml-Mn)); 
+				System.out.println(Hn+" "+ (Ml-Mn)); 
 			}
 		}
+		else {
+			Hn = H;
+			if(M > 45) {
+				System.out.println(Hn+" "+(M-45));
+			
+			}else if(M < 45) {
+				System.out.println((Hn-1)+" "+ (Ml-Mn)); 
+			}
+		}
+				
+			
+		
 	}	
 }
