@@ -14,17 +14,20 @@ public class J2439 {
 		
 		int con = 0;
 		int con1 = 0;
-		for (int i = n; i >= 0; i--) {//n����ŭ ����
-			con1++;
-			for (int j = 1; j <= i; j++) {
-				con = i-j;	
-				for (int j2 = 0; j2 < con; j2++) {
+		int n1 = 0;
+		for (int i = n; i > 0; i--) {//n번만큼 수행--5
+				n1++;
+				con = n-n1;
+				con1++;
+				for (int j2 = 0; j2 < con; j2++) {//j2가 con값보다 많을때 까지 반복 con 4 = 4
 					System.out.print(" ");
 				}
-			}
-			for (int j2 = 0; j2 <= con1; j2++) {
-				System.out.print("*");
-			}System.out.println("");
+				
+				for (int j3 = 0; j3 < con1; j3++) {//j3가 con1만큼 반복
+					System.out.print("*");
+				}System.out.println("");
+			
+			
 		}
 
 	}
